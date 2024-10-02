@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br"> 
+<head> 
+    <meta charset="UTF-8"> <!-- Define a codificação de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura o layout para ser responsivo em dispositivos móveis -->
+    <link rel="stylesheet" href="style.css"> <!-- Importa o arquivo de estilos CSS -->
+    <title>Olimpíadas de Paris 2024</title> <!-- Título da página que aparece na aba do navegador -->
+</head>
+<body>
+    <!-- Cabeçalho da página com título e subtítulo -->
+    <header>
+        <h1>Os Medalistas Brasileiros</h1>
+        <h2>Paris - 2024 🥇🥈🥉</h2>
+    </header>   
+    
+    <main>
+        <section>
+            <!-- Container do campo de busca com input e botão -->
+            <div class="button-container">
+                <input type="text" placeholder="Digite o Nome do Atleta ou Esporte" id="campo-pesquisa"> <!-- Campo de texto para o usuário digitar a pesquisa -->
+                <button onclick="pesquisar()"><img class="img-busca" alt="Pesquisar" src="https://www.svgrepo.com/show/488200/find.svg"></button> <!-- Botão de pesquisa com ícone -->
+            </div>
+        </section>
+
+        <!-- Seção onde os resultados da pesquisa serão exibidos -->
+        <section class="resultados-pesquisa" id="resultados-pesquisa">
+        </section>
+    </main>
+    
+    <!-- Rodapé com informações de contato -->
+    <footer>
+        <p>Entre em Contato Pelo Email: fernandoglv568@gmail.com</p>
+    </footer>
+    
+    <!-- Importação dos scripts JavaScript -->
+    <script src="dados.js"></script> <!-- Arquivo JavaScript que contém os dados dos atletas -->
+    <script src="app.js"></script> <!-- Arquivo JavaScript com a lógica de busca e manipulação dos dados -->
+</body>
+</html>

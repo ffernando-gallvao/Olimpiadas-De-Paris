@@ -1,0 +1,230 @@
+/* Importa a fonte Chakra Petch do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+/* Define o estilo global para o corpo da página */
+body {
+    height: 100vh; /* Altura igual à altura da janela de visualização */
+    width: 100vw; /* Largura igual à largura da janela de visualização */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove padding padrão do navegador */
+    display: flex; /* Ativa o modo flexbox */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    align-items: center; /* Centraliza o conteúdo verticalmente */
+    background-image: url('https://images.pexels.com/photos/6321080/pexels-photo-6321080.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Define imagem de fundo */
+    font-family: 'Montserrat', sans-serif; /* Fonte padrão para a página */
+    flex-direction: column; /* Organiza os elementos em coluna */
+    background-size: cover; /* Faz com que a imagem de fundo cubra toda a tela */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* A imagem de fundo permanece fixa ao rolar a página */
+    position: fixed; /* Fixa o body na janela */
+    top: 0; right: 0; bottom: 0; left: 0; /* Garante que o body ocupe toda a tela */
+}
+
+/* Classe para exibir informações esportivas */                   
+.esporte {
+    font-size: 0.9rem; /* Define o tamanho do texto */
+    color: #666; /* Define a cor do texto */
+    margin-top: 5px; /* Adiciona margem acima do elemento */
+}
+
+/* Estiliza as imagens dos itens de resultado */
+.item-resultado img {
+    width: 100px; /* Largura da imagem */
+    height: 100px; /* Altura da imagem */
+    border-radius: 50%; /* Deixa a imagem circular */
+    object-fit: cover; /* Ajusta a imagem para cobrir a área */
+    margin-right: 1rem; /* Adiciona espaço à direita */
+}
+
+/* Estilo de mensagens de erro */
+.mensagem-erro {
+    color: white; /* Cor do texto */
+    background-color: #f00; /* Fundo vermelho */
+    padding: 3%; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Estiliza títulos h2 dentro de itens de resultado */
+.item-resultado h2 {
+    margin-left: 1rem; /* Adiciona espaço à esquerda */
+}
+
+/* Estiliza títulos h1 */
+h1 {
+    font-size: 1.9rem; /* Tamanho do texto */
+    color: #fcfdfd; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    letter-spacing: 0.3rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza títulos h2 */
+h2 {
+    font-size: 1.5rem; /* Tamanho da fonte */
+    color: #fcfdfd; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    letter-spacing: 0.2rem; /* Espaçamento entre letras */
+}
+
+/* Estiliza seções */
+section {
+    display: flex; /* Flexbox */
+    flex-direction: column; /* Colunas */
+    align-items: center; /* Centraliza horizontalmente */
+    margin-bottom: 3rem; /* Espaçamento abaixo */
+}
+
+/* Estiliza os campos de entrada */
+section input {
+    width: 30rem; /* Largura */
+    border: none; /* Remove borda */
+    padding: 1rem; /* Padding */
+    border-radius: 1.5rem; /* Bordas arredondadas */
+    margin-bottom: 1rem; /* Espaço abaixo */
+    color: #45474b; /* Cor do texto */
+    font-size: 1rem; /* Tamanho da fonte */
+    box-sizing: border-box; /* Inclui padding e border na largura */
+    text-align: center; /* Centraliza texto */
+    opacity: 0.9; /* Transparência */
+}
+
+/* Estiliza os botões */
+section button {
+    padding: 0.8rem 1.2rem; /* Padding */
+    border: none; /* Remove borda */
+    border-radius: 1.5rem; /* Bordas arredondadas */
+    background-color: #e0f008; /* Cor do fundo */
+    color: #F5F7F8; /* Cor do texto */
+    cursor: pointer; /* Cursor de mão */
+}
+
+/* Efeito hover para os botões */
+section button:hover {
+    background-color: #3e8e41; /* Cor ao passar o mouse */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+}
+
+.img-busca {  /*Define o tamanho da imagem de busca (lupa)*/
+    width: 17px; /* Define a largura da imagem de busca para 17 pixels */
+}
+
+/* Estilo da caixa de resultados de pesquisa */
+.resultados-pesquisa {
+    width: 60rem; /* Largura */
+    height: 46vh; /* Altura */
+    overflow-y: auto; /* Rolagem vertical */
+    margin-top: 1rem; /* Espaço acima */
+    padding: 1rem; /* Padding interno */
+    border-radius: 0.6rem; /* Bordas arredondadas */
+    opacity: 0.9; /* Transparência */
+}
+
+/* Estiliza itens de resultado */
+.item-resultado {
+    background: #FFFFFF; /* Cor de fundo */
+    border-radius: 0.6rem; /* Bordas arredondadas */
+    padding: 1rem; /* Padding interno */
+    margin-bottom: 1rem; /* Espaço abaixo */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
+    flex-direction: row; /* Alinha em linha */
+    text-align: center; /* Centraliza conteúdo */
+}
+
+/* Estiliza links dentro dos itens de resultado */
+.item-resultado a {
+    text-decoration: none; /* Remove sublinhado */
+    color: #31608f; /* Cor do texto */
+}
+
+/* Estilo de links ao passar o mouse */
+.item-resultado a:hover {
+    text-decoration: underline; /* Adiciona sublinhado */
+}
+
+/* Estiliza o rodapé */
+footer {
+    color: #ffffff; /* Cor do texto */
+    text-align: right; /* Centraliza texto */
+    position: absolute; /* Posicionamento */
+    bottom: 0; /* Alinha ao fundo */
+    width: 100%; /* Largura total */
+    right: 2%; 
+    font-size: 1rem; /* Tamanho da fonte */
+}
+
+/* Responsividade para tablets e dispositivos menores */
+@media (max-width: 768px) {
+    /* Estiliza o título principal para telas de até 768px de largura */
+    h1 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte para 2rem em telas menores */
+        letter-spacing: 0.2rem; /* Aumenta o espaçamento entre letras */
+    }
+
+    /* Estiliza os botões de filtro em telas menores */
+    .filter-buttons {
+        right: 25%; /* Posiciona os botões 25% da borda direita */
+        top: 10px; /* Define a posição superior */
+        z-index: 1; /* Garante que os botões fiquem acima de outros elementos */
+    }
+
+    /* Estiliza os campos de input dentro de uma section em telas menores */
+    section input {
+        width: 25rem; /* Define a largura dos inputs em 25rem */
+        padding: 0.8rem; /* Ajusta o padding para proporcionar mais espaço interno */
+    }
+
+    /* Estiliza a área de resultados da pesquisa */
+    .resultados-pesquisa {
+        width: 40rem; /* Define a largura da caixa de resultados para 40rem */
+        height: 40vh; /* Ajusta a altura para ocupar 40% da altura da viewport */
+    }
+
+    /* Ajusta o tamanho do texto dos títulos dentro dos itens de resultado */
+    .item-resultado h2 {
+        font-size: 1.3rem; /* Define o tamanho da fonte para 1.3rem */
+    }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+    /* Ajusta o estilo do título principal para telas de até 480px de largura */
+    h1 {
+        font-size: 1.8rem; /* Reduz o tamanho da fonte para 1.8rem */
+        letter-spacing: 0.1rem; /* Reduz o espaçamento entre letras */
+    }
+
+    /* Ajusta os botões de filtro para telas menores */
+    .filter-buttons {
+        right: 17%; /* Ajusta a posição dos botões para 17% da borda direita */
+        top: 10px; /* Mantém a posição superior */
+        z-index: 1; /* Mantém o botão acima de outros elementos */
+    }
+
+    /* Ajusta a largura dos inputs em telas de celular */
+    section input {
+        width: 17rem; /* Reduz a largura dos inputs para 17rem */
+    }
+
+    /* Ajusta os botões dentro da section para telas menores */
+    section button {
+        padding: 0.6rem 1rem; /* Ajusta o padding para 0.6rem vertical e 1rem horizontal */
+        font-size: 0.9rem; /* Reduz o tamanho da fonte do botão */
+    }
+
+    /* Estiliza a área de resultados da pesquisa em telas pequenas */
+    .resultados-pesquisa {
+        width: 90%; /* Define a largura como 90% da tela para melhor adaptação */
+        height: 50vh; /* Ajusta a altura para ocupar 50% da altura da viewport */
+    }
+
+    /* Ajusta o tamanho do texto dos títulos dentro dos itens de resultado */
+    .item-resultado h2 {
+        font-size: 1.1rem; /* Reduz o tamanho da fonte para 1.1rem */
+    }
+
+    /* Ajusta o tamanho do texto no rodapé */
+    footer {
+        font-size: 0.9rem; /* Define o tamanho da fonte do rodapé para 0.9rem */
+    }
+}
